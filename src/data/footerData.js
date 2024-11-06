@@ -1,35 +1,30 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 export const footMenu = [
     {
         id: 1,
-        title: "Help",
+        title: "Pages",
         menu: [
             {
                 id: 1,
-                link: "FAQs",
+                link: "Home",
                 path: "/"
             },
             {
                 id: 2,
-                link: "Track Order",
-                path: "/"
+                link: "All Products",
+                path: "/all-products"
             },
             {
                 id: 3,
-                link: "Cancel Order",
-                path: "/"
+                link: "Cart",
+                path: "/cart"
             },
             {
                 id: 4,
-                link: "Return Order",
-                path: "/"
-            },
-            {
-                id: 5,
-                link: "Warranty Info",
-                path: "/"
-            },
+                link: "Error Page",
+                path: "/error-page"
+            }
         ]
     },
     {
@@ -37,30 +32,25 @@ export const footMenu = [
         title: "Policies",
         menu: [
             {
+                id: 4,
+                link: "Privacy Policy",
+                path: "/"
+            },
+            {
                 id: 1,
                 link: "Return Policy",
                 path: "/"
             },
             {
                 id: 2,
-                link: "Security",
+                link: "Shipping Policy",
                 path: "/"
             },
-            {
-                id: 3,
-                link: "Sitemap",
-                path: "/"
-            },
-            {
-                id: 4,
-                link: "Privacy Policy",
-                path: "/"
-            },
-            {
+                        {
                 id: 5,
                 link: "Terms & Conditions",
                 path: "/"
-            },
+            }
         ]
     },
     {
@@ -78,18 +68,13 @@ export const footMenu = [
                 path: "/"
             },
             {
-                id: 3,
-                link: "Service Centres",
-                path: "/"
-            },
-            {
                 id: 4,
                 link: "Careers",
                 path: "/"
             },
             {
-                id: 5,
-                link: "Affiliates",
+                id: 3,
+                link: "Service Centres",
                 path: "/"
             },
         ]

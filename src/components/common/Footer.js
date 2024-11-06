@@ -10,7 +10,7 @@ const Footer = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setSubValue('');
-        alert('Thankyou, you are subscribed to receive our daily newsletter');
+        alert('Thank you, you are subscribed to receive our daily newsletter');
     };
 
     const currYear = new Date().getFullYear();
@@ -22,10 +22,10 @@ const Footer = () => {
                 <div className="wrapper footer_wrapper">
                     <div className="foot_about">
                         <h2>
-                            <Link to="/">X-Beat</Link>
+                            <Link to="/">Hertz</Link>
                         </h2>
                         <div className="foot_subs">
-                            <p>Subscribe to our Email alerts to receive early discount offers, and new products info.</p>
+                            <p>Subscribe to our Email alerts to receive early discount offers.</p>
                             <form onSubmit={handleSubmit}>
                                 <input
                                     type="email"

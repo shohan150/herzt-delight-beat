@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai';
-import { dropdownMenu } from '../../data/headerData';
-import commonContext from '../../contexts/common/commonContext';
+import { Link } from 'react-router-dom';
 import cartContext from '../../contexts/cart/cartContext';
+import commonContext from '../../contexts/common/commonContext';
+import { dropdownMenu } from '../../data/headerData';
 import AccountForm from '../form/AccountForm';
 import SearchBar from './SearchBar';
 
@@ -26,9 +26,7 @@ const Header = () => {
         };
     }, [isSticky]);
 
-
     const cartQuantity = cartItems.length;
-
 
     return (
         <>
@@ -36,7 +34,7 @@ const Header = () => {
                 <div className="container">
                     <div className="navbar">
                         <h2 className="nav_logo">
-                            <Link to="/">X-Beat</Link>
+                            <Link to="/">Hertz</Link>
                         </h2>
                         <nav className="nav_actions">
                             <div className="search_action">
@@ -63,8 +61,8 @@ const Header = () => {
                                     <AiOutlineUser />
                                 </span>
                                 <div className="dropdown_menu">
-                                    <h4>Hello! {formUserInfo && <Link to="*">&nbsp;{formUserInfo}</Link>}</h4>
-                                    <p>Access account and manage orders</p>
+                                    <h4>Hello! {formUserInfo && <span style={{ color: "#ED1D24" }}>&nbsp;{formUserInfo}</span>}</h4>
+                                    <p>Manage your orders</p>
                                     {
                                         !formUserInfo && (
                                             <button
